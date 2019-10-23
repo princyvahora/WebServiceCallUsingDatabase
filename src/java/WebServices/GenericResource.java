@@ -172,11 +172,13 @@ public class GenericResource {
                     Obj1.accumulate("Status", "OK");
                     Obj1.accumulate("TimeStamp", System.currentTimeMillis()/1000);
                     Obj1.accumulate("Message", "Record inserted");
+                     System.out.println(Obj1);
 
                 } else {
                     Obj1.accumulate("Status", "Error");
                     Obj1.accumulate("TimeStamp", System.currentTimeMillis()/1000);
                     Obj1.accumulate("Message", "Record Not inserted");
+                     System.out.println(Obj1);
                 }
 
             } catch (SQLException ex) {
